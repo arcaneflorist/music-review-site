@@ -1,0 +1,12 @@
+{
+    "users": [
+        {"id": "1", "userName": "Michael", "age": "26", "jobId": "1"}        
+    ],
+    "jobs": [
+        {"id": "1", "title": "admin"}       
+    ],
+    "articles": [
+        {"id": "2", "artist": "Mount Kimbie, Micachu", "track": "Marilyn (WXAXRXP Session)", "album": "WXAXRXP Session", "content": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur purus ut faucibus pulvinar. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique."], "tags": ["📦", "👁‍🗨"], "img": "marilyn.jpg"},
+        {"id": "1", "artist": "Kelly Lee Owens", "track": "Let It Go", "album": "Let It Go / Omen", "content": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed felis eget velit aliquet. Netus et malesuada fames ac turpis egestas sed tempus."], "tags": ["🧊"], "img": "omen.jpg"}       
+    ]
+}

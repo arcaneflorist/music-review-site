@@ -1,0 +1,291 @@
+//#fd5750 - red
+//#2cb673 - green
+$bg: rgb(255, 249, 249);
+
+$light: #f4f4f4;
+$mid: rgb(138, 138, 138);
+$dark: rgb(75, 75, 75);
+
+$pink: #ffebf6;
+$uni-br: 0.3em;
+
+$primary: #ffffff;
+$primary-fade: rgba(130, 116, 255, 0.294);
+
+$danger: #fd5750;
+$danger-fade: #ffc5c3;
+$success: #2cb673;
+
+body {
+    margin: 0;
+    background-color:$bg;
+    font-family: Consolas, monaco, monospace;
+    // font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    // "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    // sans-serif !important;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    .article-container{
+      display: inline-block;      
+      .haiku{
+        text-align: justify;
+        letter-spacing: .2em;
+        list-style: none !important;
+        padding: 0 !important;
+
+      }
+
+    }
+
+    .global-like{
+      
+    }
+    .error{
+        font-size: 10px;
+        letter-spacing: 1px;
+        .close{
+          cursor: pointer;
+          position: absolute;
+          top: 0;
+            right: 0;
+            margin: 0.8em;   
+            .fa-times{
+              color: white;
+              font-size: 2em;
+              &:hover{
+                transition: 100ms ease-in;
+                color: $danger-fade;
+              }
+            }    
+        }        
+      }
+      .error-msg{
+        font-size: 10px;
+        word-break: break-all;
+      }
+  }
+  .rs-text{
+    letter-spacing: 1px;    
+  }
+  .nav-button{
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    
+  }
+  .prime{
+    background-color: $primary !important;
+    color: white;
+    &:hover{
+      transition: 100ms ease-in-out;
+      background-color: $primary-fade !important;
+    }
+  }
+  .rs-container{
+    display: flex !important;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .curvy{
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-basis: auto;
+    padding: 2em;
+    overflow: auto;
+    border-radius: 8px;
+    background: rgb(239, 243, 245);    
+    width: 100%; 
+    height: 100%;
+    box-shadow: rgba(8, 35, 51, 0.03) 0px 0px 1px, rgba(8, 35, 51, 0.05) 0px 2px 2px;   
+  }
+  .curvy-light{
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-basis: auto;
+    padding: 1em;
+    overflow: auto;
+    border-radius: 8px;
+    background: rgb(239, 243, 245);    
+    width: 100%; 
+    height: 100%;
+    box-shadow: rgba(8, 35, 51, 0.03) 0px 0px 1px, rgba(8, 35, 51, 0.05) 0px 1px 1px;   
+  }
+  .wish-input{
+    line-height: 1;
+    font-weight: 700;    
+    padding: 0.8em;     
+    border-radius: 1em;
+    background-color:white;
+    font-size: 12px;
+    color: $primary;
+    
+    width: 100%;
+    border-style: none; 
+    box-shadow: rgba(8, 35, 51, 0.03) 1px 1px 2px, rgba(8, 35, 51, 0.05) 1px 3px 6px;        
+  }
+  .mg-1{
+    margin: 1em !important;
+  }
+  .wish-input::placeholder{
+    font-weight: 700;    
+    color: $primary-fade;
+    font-size: 12px;
+    letter-spacing: .08em;
+  }
+  .input-btn{
+    cursor: pointer;
+    padding: .5em;
+    text-align: center;
+    font-size: 14px;
+    border-radius: .3em;
+    margin-left: 1em;
+    width: 2em;
+    box-shadow: rgba(8, 35, 51, 0.03) 1px 1px 2px, rgba(8, 35, 51, 0.05) 1px 3px 6px;         
+  }
+  .input-btn-bg{
+    cursor: pointer;
+    padding: .8em;
+    text-align: center;
+    font-size: 14px;
+    border-radius: .3em;
+    margin: 1em;
+    width: 3em;
+    height: 3em;
+    box-shadow: rgba(8, 35, 51, 0.03) 1px 1px 2px, rgba(8, 35, 51, 0.05) 1px 3px 6px;         
+  }
+  .sm-text{
+    display: block;
+    
+    font-size: 12px;
+    color: $mid;
+    .lnk{
+      color: $primary;
+      &:hover{
+        color: $primary-fade;
+      }
+    }
+  }
+  .text-centre{
+    text-align: center; 
+  }
+  .text-left{
+    text-align: left;
+    padding-left: 1em;
+  }
+  .wishlist{
+    height: 100%;
+    width: 100%;    
+    position: relative;
+    display: block;
+    .request{
+      .title{
+        text-align: center;
+        color: $mid;
+        font-size: 18px;
+        padding: .6em;
+
+      }
+      text-align: center;
+      padding: 0.6em;     
+      margin-bottom: 1.2em;
+      
+      height: 100%;
+      width: 100%;
+      max-height: 298px;
+      position: relative;
+      //overflow: auto;
+      border-radius: 8px;
+      background:$bg;  
+      width: 100%; 
+      box-shadow: rgba(8, 35, 51, 0.03) 0px 0px 2px, rgba(8, 35, 51, 0.05) 0px 3px 6px;    
+      min-height: 12vh;
+      .details{
+        font-size: 8px;
+        
+        color: $mid;        
+        text-align: center;
+        font-size: 11px !important;
+        line-height: 1.574 !important;
+        direction: ltr !important;        
+        word-spacing: normal !important;
+        word-break: normal !important;
+      }
+      .vote-container{
+        position: absolute;
+        bottom: -.5em;
+        left: -.5em;
+        background-color: rgba(130, 116, 255, 0.294);
+        border-radius: .2em;
+        display: block;         
+        min-width: 20px;
+        text-align: center;
+        max-height: 30px;
+        &:hover{
+          background-color: #8274ff;
+          transition: 50ms ease-in;
+        }
+        // .upvote{
+        //   cursor: pointer;
+        //   color: white;
+        //   font-size: .2em;
+        //   height: 50%;
+        // }
+        // .downvote{
+        //   cursor: pointer;
+        //   color: white;
+        //   height: 50%;
+        //   font-size: .2em;
+        // }
+      }
+      .controls{
+        position: absolute;
+        top: .3em;
+        right: .3em;
+        background-color: #e7e7e7;
+        border-radius: 1em;
+        display: inline-flex;
+        padding: .2em;      
+        .close{
+          background-color: $danger !important;
+        }
+        .expand{
+          background-color: $success !important;
+        }
+      }
+      .button{
+        cursor: pointer;
+        border-radius: 2em;
+        margin: .1em;
+        padding: .1em;
+        display: inline-flex;
+        height: .5em;
+        width: .5em; 
+        background-color: white;
+        &:hover{
+          color: multiply;
+        }
+      }   
+      .v-button{
+        cursor: pointer;
+        width: 100%;        
+        display: block;
+        padding: .2em;
+        height: 50%;        
+        color: white;
+        font-size: .6em;
+        &:hover{
+          color: $dark;
+          transition: 50ms ease-in;
+        }
+      }
+    }
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+  
